@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>G-SHOP</title>
+  </head>
+  <body>
+    <!-- Cabeçalho - Navbar -->
+
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="./public/img/favicon-32x32.png" alt="controller-logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+          </div>
+          <div class="container-title">
+            <p class="title">G-SHOP</p>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Carrossel -->
+
+    <div
+      id="carouselCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="3000"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://wallpapercave.com/wp/wp12426065.jpg"
+            class="d-block w-100"
+            alt="call-of-duty slide"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Call of Duty</h5>
+            <p>Jogo para veteranos de Guerra!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://wallpapercave.com/wp/wp5905289.jpg"
+            class="d-block w-100"
+            alt="assassins-creed slide"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Assassin's Creed</h5>
+            <p>Venha representar o Credo dos Assassinos</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://wallpapercave.com/wp/wp12492579.jpg"
+            class="d-block w-100"
+            alt="sub-zero slide"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sub-Zero</h5>
+            <p>Ele congela seu inferno e sua jogatina!</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Seção 1 -->
+
+    <nav
+      class="navbar bg-body-tertiary"
+      style="margin: 48px 0 0 0; height: 5rem"
+    >
+      <div class="container">
+        <span class="navbar-brand mb-0 h1">Jogos - PS5</span>
+      </div>
+    </nav>
+
+    <div id="carouselCards1" class="carousel slide">
+      <section class="pt-5 pb-10">
+        <div class="container">
+          <!--  1° Carrossel de Cards -->
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="https://global.cdn.magazord.com.br/gamemania/img/2023/10/produto/4038/jogo-spider-man-2-ps5-a.jpg?ims=290x290"
+                      class="card-img-top"
+                      alt="marvels spider-man"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Spider-Man 2</h5>
+                      <a
+                        href="#"
+                        class="btn btn-primary disabled"
+                        aria-disabled="true"
+                        style="margin-top: 10px"
+                        >Compre Agora!</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="https://global.cdn.magazord.com.br/gamemania/img/2023/08/produto/3634/mortal-kombat-1-standart-01.jpg?ims=290x290"
+                      class="card-img-top"
+                      alt="mortal kombat 1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Mortal Kombat 1</h5>
+                      <a
+                        href="https://store.steampowered.com/app/1971870/Mortal_Kombat_1/"
+                        target="_blank"
+                        class="btn btn-primary"
+                        style="margin-top: 10px"
+                        >Compre Agora!</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="https://global.cdn.magazord.com.br/gamemania/img/2023/08/produto/3805/ea-sports-fc-24-ps5-a.jpg?ims=290x290"
+                      class="card-img-top"
+                      alt="ea sports fc 2024"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">EA Sports FC 2024</h5>
+                      <a
+                        href="https://store.steampowered.com/app/2195250/EA_SPORTS_FC_24/"
+                        target="_blank"
+                        class="btn btn-primary"
+                        style="margin-top: 10px"
+                        >Compre Agora!</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="https://global.cdn.magazord.com.br/gamemania/img/2023/12/produto/4233/jogo-hogwarts-legacy-ps5-standard-a.jpg?ims=290x290"
+                      class="card-img-top"
+                      alt="hogwarts legacy"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Hogwarts Legacy</h5>
+                      <a
+                        href="https://store.steampowered.com/app/990080/Hogwarts_Legacy/"
+                        target="_blank"
+                        class="btn btn-primary"
+                        style="margin-top: 10px"
+                        >Compre Agora!</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--  2° Carrossel de Cards -->
+
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="https://global.cdn.magazord.com.br/gamemania/img/2024/02/produto/4671/final-fantasy-vii-rebirth-a.jpg?ims=290x290"
+                      class="card-img-top"
+                      alt="final fantasy 7"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Final Fantasy VII Rebirth</h5>
+                      <a
+                        class="btn btn-primary disabled"
+                        aria-disabled="true"
+                        style="margin-top: 10px"
+                        >Compre Agora!</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="https://global.cdn.magazord.com.br/gamemania/img/2022/05/produto/1119/jogo-horizon-forbidden-west-ps5-a-copiar.jpg?ims=290x290"
+                      class="card-img-top"
+                      alt="horizon forbidden west"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Horizon Forbidden West</h5>
+                      <a
+                        href="https://store.steampowered.com/app/2420110/Horizon_Forbidden_West__Edio_Completa/"
+                        target="_blank"
+                        class="btn btn-primary"
+                        style="margin-top: 10px"
+                        >Compre Agora!</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botões Carrossel -->
+
+          <button
+            class="carousel-control-prev"
+            style="
+              background-color: #000;
+              border-radius: 4px;
+              height: 12.25rem;
+              width: 5%;
+              top: 150px;
+              margin: 0 15px 0 15px;
+            "
+            type="button"
+            data-bs-target="#carouselCards1"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            style="
+              background-color: #000;
+              border-radius: 4px;
+              height: 12.25rem;
+              width: 5%;
+              top: 150px;
+              margin: 0 15px 0 15px;
+            "
+            type="button"
+            data-bs-target="#carouselCards1"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Seção 2 -->
+
+    <nav
+      class="navbar bg-body-tertiary"
+      style="margin: 48px 0 0 0; height: 5rem"
+    >
+      <div class="container">
+        <span class="navbar-brand mb-0 h1">Jogos - PS4</span>
+      </div>
+    </nav>
+
+    <div id="carouselCards2" class="carousel slide">
+      <section class="pt-5 pb-10">
+        <div class="container">
+          <!--  1° Carrossel de Cards -->
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="https://global.cdn.magazord.com.br/gamemania/img/2022/05/produto/961/jogo-far-cry-6-ps4-a.jpg?ims=290x290"
+                      class="card-img-top"
+                      alt="far cry 6"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Far Cry 6</h5>
+                      <a
+                        href="https://store.steampowered.com/app/2369390/Far_Cry_6/"
+                        target="_blank"
+                        class="btn btn-primary"
+                        style="margin-top: 10px"
+                        >Compre Agora!</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="https://global.cdn.magazord.com.br/gamemania/img/2022/11/produto/2196/god-of-war-ragnarok.jpg?ims=290x290"
+                      class="card-img-top"
+                      alt="gow ragnarok"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">God of War Ragnarok</h5>
+                      <a
+                        href="#"
+                        class="btn btn-primary disabled"
+                        aria-disabled="true"
+                        style="margin-top: 10px"
+                        >Compre Agora!</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="https://global.cdn.magazord.com.br/gamemania/img/2022/05/produto/967/jogo-horizon-forbidden-west-ps4-a.png?ims=290x290"
+                      class="card-img-top"
+                      alt="horizon forbidden west"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Horizon Forbidden West</h5>
+                      <a
+                        href="https://store.steampowered.com/app/2420110/Horizon_Forbidden_West__Edio_Completa/"
+                        target="_blank"
+                        class="btn btn-primary"
+                        style="margin-top: 10px"
+                        >Compre Agora!</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="https://global.cdn.magazord.com.br/gamemania/img/2023/07/produto/3566/far-cry-4-ps4.jpg?ims=290x290"
+                      class="card-img-top"
+                      alt="far cry 4"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Far Cry 4</h5>
+                      <a
+                        href="https://store.steampowered.com/app/298110/Far_Cry_4/"
+                        target="_blank"
+                        class="btn btn-primary"
+                        style="margin-top: 10px"
+                        >Compre Agora!</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--  2° Carrossel de Cards -->
+
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="https://global.cdn.magazord.com.br/gamemania/img/2023/06/produto/3305/jogo-street-fighter-6-ps4-a.jpg?ims=290x290"
+                      class="card-img-top"
+                      alt="street fighter 6"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Street Fighter 6</h5>
+                      <a
+                        href="https://store.steampowered.com/app/1364780/Street_Fighter_6/"
+                        target="_blank"
+                        class="btn btn-primary"
+                        style="margin-top: 10px"
+                        >Compre Agora!</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botões Carrossel -->
+
+          <button
+            class="carousel-control-prev"
+            style="
+              background-color: #000;
+              border-radius: 4px;
+              height: 12.25rem;
+              width: 5%;
+              top: 150px;
+              margin: 0 15px 0 15px;
+            "
+            type="button"
+            data-bs-target="#carouselCards2"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            style="
+              background-color: #000;
+              border-radius: 4px;
+              height: 12.25rem;
+              width: 5%;
+              top: 150px;
+              margin: 0 15px 0 15px;
+            "
+            type="button"
+            data-bs-target="#carouselCards2"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer text-center">
+      <div class="rede-sociais">
+        <a href="https://www.instagram.com/brzera_/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://steamcommunity.com/profiles/76561198816325278/"
+          target="_blank"
+          ><i class="fab fa-steam"></i
+        ></a>
+        <a href="https://www.facebook.com/bruno.gregorio.37669" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/bruno-gregório-5b78aa2bb/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/DevBrzera" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+      <div class="footer-end">
+        <ul class="info-footer">
+          <li>
+            <a href="#" class="btn btn-sm btn-custom"
+              ><i class="bi bi-person" style="margin-right: 3px"></i>Sobre</a
+            >
+          </li>
+          <li>
+            <a href="#" class="btn btn-sm btn-custom"
+              ><i class="bi bi-journal-check" style="margin-right: 3px"></i
+              >Termos de Devolução</a
+            >
+          </li>
+        </ul>
+        <ul class="info-footer2">
+          <li>
+            <p class="btn btn-sm btn-custom">
+              <i class="bi bi-clock" style="margin-right: 3px"></i>Seg - Sáb |
+              7:00 - 18:00
+            </p>
+          </li>
+          <li>
+            <p class="btn btn-sm btn-custom">
+              <i class="bi bi-building-fill" style="margin-right: 3px"></i>Av.
+              Astolfo Dutra, 255, Cataguases - MG
+            </p>
+          </li>
+          <li>
+            <p class="btn btn-sm btn-custom">
+              <i class="bi bi-envelope-fill" style="margin-right: 3px"></i
+              >gshopenterprise@gmail.com
+            </p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://kit.fontawesome.com/e4fcfc20fe.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
