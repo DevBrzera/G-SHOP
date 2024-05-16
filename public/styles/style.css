@@ -97,4 +97,22 @@ ul li {
     width: 20%;
 }
 
+.container-card {
+    border: transparent !important;
+    background-color: #f8f9fa;
+    height: 600px;
+    width: 93%;
+    margin: 30px 50px 0 50px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-card a {
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
 
